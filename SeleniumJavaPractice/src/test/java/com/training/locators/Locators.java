@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
+	
 	public static void main(String[] args) {
+		//Invoke Chrome Browser
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
@@ -51,6 +53,8 @@ public class Locators {
 		//Locator -6 : partialLinkText
 		//Clicking on Python for Automation link
 		driver.findElement(By.partialLinkText("Python")).click();
+		
+		driver.close();
 		
 	}
 }
